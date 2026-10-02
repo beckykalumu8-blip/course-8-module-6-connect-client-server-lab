@@ -22,10 +22,6 @@ def get_events():
 def add_event():
     data = request.get_json()
 
-<<<<<<< HEAD
-=======
-    # Validate the request
->>>>>>> feature-connect-frontend
     if not data or "title" not in data or not data["title"].strip():
         return jsonify({"error": "Title is required"}), 400
 
